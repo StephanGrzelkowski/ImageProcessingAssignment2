@@ -18,10 +18,10 @@ switch yorder
         Gy = G;
     case 1
         y = -3*sigma : 3*sigma;
-        Gy = (-y./sigma^2).*G;
+        Gy = (-y./(sigma^2)).*G;
     case 2
         y = -3*sigma : 3*sigma;
-        Gy = (y.^2/sigma^4) - 1/(sigma^2).*G;
+        Gy = (y.^2/(sigma^4)) - 1/(sigma^2).*G;
 end
         
 F = imfilter(f, Gx, 'conv', 'replicate');
