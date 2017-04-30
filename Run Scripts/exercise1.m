@@ -10,6 +10,7 @@ Hscale = imfilter(F,G,'conv','replicate');
 G  = [1, 0, 0, 0; 0, 0, 0, 0]; 
 Htranslate = imfilter(F,G,'conv','replicate');
 
+
 figure; 
 subplot(141)
 imshow(F)
